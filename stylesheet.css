@@ -1,56 +1,98 @@
+#wrapper {
+  width: 800px;
+  height: 1200px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  gap: 10px;
+  position: relative;
+}
 
-  
- 
-  
- 
-  
-  a {
-    text-decoration: none;
-    color: #ff99cc;
-  }
-  
-  a:hover {
-    text-decoration: underline;
-    color: #3b3849;
-  }
-  
-  p {
-    color: #3b3849;
-    margin: 0px;
-    margin-bottom: 8px;
-    text-align: center;
-  }
-  
-  b {
-    color: #ff99cc;
-  }
-  
+body {
+  background-color: #fceef5;
+  background: #fceef5 url("./Assignment1/images/IHpPGWf.png");
+}
 
-  h2 {
-    font-size: 16px;
-    text-transform: lowercase;
-    letter-spacing: 4px;
-    text-align: left;
-    color: #806d53;
-  }
+h1 {
+  color: #806d53;
+  position: absolute;
+  top: 35px;
+  left: 70px;
+  font-size: 50px;
+  letter-spacing: 3px;
+  font-weight: normal;
+}
+
+.headbar {
+  margin-top: 100px;
+  height: 45px;
+  border: 1px rgb(196, 240, 255) outset;
+  border-radius: 25px;
+  background: linear-gradient(90deg, rgb(196, 240, 255) 9%, rgb(251, 255, 254) 100%);
+}
+
+.main {
+  width: 770px;
+  height: 1000px;
+  border-width: 7px;
+  border-style: solid;
+  border-image: url("./Assignment1/images/8xftJ3v.gif") 7 fill round;
+  margin: auto;
+  border-top-right-radius: 25px;
+  padding: 10px
+}
+
+.container {
+  background-color:rgb(255, 235, 238);
+  width: 60%;
+  margin-left: -10px;
+  border: dashed 1px gainsboro;
+  border-left: none;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+.container h4{
+  color: #806d53;
+  margin-left: 20px;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  padding: 3px;
+  line-height: 20px;
+}
+
+li a {
+  display: block;
+
+}
+
+li a:hover {
+  background-color: #fceef5;
+  text-decoration: none;
+}
   
-  /* Scrollbar styles */
-  ::-webkit-scrollbar {
-    width: 10px;
-    height: 12px;
-    background: #fceef5;
-  }
+a {
+  text-decoration: none;
+  color: #ff99cc;
+}
   
-  ::-webkit-scrollbar-track {
-    background: #fceef5;
-    opacity: 0.5;
-    border-radius: 0px;
-    width: 0px;
-    border: 1px solid #fceef5;
-  }
+a:hover {
+  text-decoration: underline;
+  color: #3b3849;
+}
   
-  ::-webkit-scrollbar-thumb {
-    background: #ffd7f7;
-    border: 1px solid #ff99cc;
-    border-radius: 5px;
-  }
+h2 {
+  font-size: 16px;
+  text-transform: lowercase;
+  letter-spacing: 4px;
+  text-align: left;
+  color: #806d53;
+}
