@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>pokemon</title>
+  <link rel="icon" type="image/x-icon" href="./images/favicon.ico">
+
+  <!-- linked css files -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link href="./stylesheet/style.css" rel="stylesheet" type="text/css" media="all">
+
+  <style>
+    body {
+      color: #081910;
+      text-shadow: 1px 1px 2px rgba(255, 0, 0, 0.4), -1px -1px 2px rgba(0, 100, 255, 0.4), 0px -1px 2px rgba(0, 255, 0, 0.4);
+    }
+
+    a:hover {
+      font-weight: bold;
+    }
+
+    h1 {
+      padding-left: .3rem;
+      font-size: 3rem;
+      margin: 1rem .5rem;
+      border-left: 2px dotted red;
+    }
+
+
+    .wrapper {
+      display: block;
+      transform: rotate(-.2deg);
+    }
+
+    .container {
+      width: 800px;
+      background: #F6F94E;
+      border: 3px solid black;
+      border-radius: 3px;
+      margin: 0 auto;
+      box-shadow: 0 0 3px black;
+    }
+
+    .sheettitle {
+      text-align: left;
+    }
+
+    .t {
+      background: black;
+      color: white;
+      font-size: .8rem;
+      font-family: 'courier new';
+      border-bottom: 1px dotted red;
+    }
+
+    .tinytitle {
+      display: flex;
+      justify-content: space-between;
+      padding: 0px .3rem 0px .3rem;
+      font-size: .8rem;
+      text-align: justify;
+      letter-spacing: 1px;
+      border: 1px solid black;
+      margin: .2rem .2rem .2rem .2rem;
+    }
+
+    .leftside {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+    }
+
+    .polaroid {
+      width: 50%;
+      background: #F0FCEA;
+      text-align: center;
+      padding: 3px 4px 5px 4px;
+      border: 1px solid black;
+      border-radius: 3px;
+      box-shadow: 0 0 3px black;
+      margin: 0 auto;
+    }
+
+    
+
+    .pola-title {
+      display: flex;
+      justify-content: space-between;
+      font-size: .7rem;
+      line-height: 80%;
+      margin-bottom: 2px;
+    }
+
+    .polaroid:hover {
+      transform: scale(1) rotate(-2deg);
+      scale: 2;
+      z-index: 99;
+    }
+
+    .trainercard:hover {
+      transform: scale(1) rotate(-2deg);
+      scale: 2;
+      z-index: 99;
+
+    }
+
+    .trainercard {
+      background: #F0FCEA;
+      text-align: center;
+      padding: 3px 4px 5px 4px;
+      border: 1px solid black;
+      border-radius: 3px;
+      box-shadow: 0 0 3px black;
+      margin: 0 auto;
+      margin-top: 40px;
+
+    }
+
+    .rightside {
+      font-size: 1.2rem;
+      border-left: 2px solid black;
+    }
+  </style>
+
+</head>
+
+<body>
+  <div class="nav">
+    <a href="./index.html">home!</a>
+    <a href="./pokemon.html">pokemon!</a>
+    <a href="./animalcrossing.html">animal crossing!</a>
+    <a href="./web.html">explore!</a>
+</div>
+
+  <div class="wrapper" style="margin:30px auto 100px;">
+    <div class="container p-0">
+      <div class="row no-gutters">
+        <div class="col-lg-6 sheettitle">
+          <h1>POKEMON<br>FAVORITES.</h1>
+        </div>
+      </div>
+
+      <div class="" style="border:1px solid black; margin:.5rem;">
+        <div class="row no-gutters" style="border:2px solid black; margin:.2rem;">
+          <div class="col-4">
+            <div class="row no-gutters t">
+              <div style="background:red; color:white; padding:0px .5rem;">00.</div>
+              <div style="font-family:'courier new'; margin:0px .5rem;">game:</div>
+            </div>
+            <div class="row no-gutters" style="font-size:1.2rem; padding:1rem .5rem;">
+              HeartGold & SoulSilver
+            </div>
+          </div>
+
+          <div class="col-4" style="border-left:2px solid black;">
+            <div class="row no-gutters t">
+              <div style="background:red; color:white; padding:0px .5rem;">01.</div>
+              <div style="font-family:'courier new'; margin:0px .5rem;">type:</div>
+            </div>
+            <div class="row no-gutters" style="font-size:1.2rem; padding:1rem .5rem;">
+              Fairy & Dark
+            </div>
+          </div>
+
+          <div class="col-4" style="border-left:2px solid black;">
+            <div class="row no-gutters t">
+              <div style="background:red; color:white; padding:0px .5rem;">02.</div>
+              <div style="font-family:'courier new'; margin:0px .5rem;">generation:</div>
+            </div>
+            <div class="row no-gutters" style="font-size:1.2rem; padding:1rem .5rem;">
+              gen 4
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="" style="border:1px solid black; margin:.5rem;">
+
+        <div class="row no-gutters p-0" style="border:2px solid black; margin:.2rem .2rem 0px .2rem;">
+          <div class="col-lg-6">
+            <div class="row no-gutters t">
+              <div style="background:red; color:white; padding:0px .5rem;">03.</div>
+              <div style="margin:0px .5rem;">cute cards:</div>
+            </div>
+            <div class="row no-gutters" style="padding:.3rem;">
+
+              <div class="polaroid">
+                <div class="pola-title">
+                  <span>cute-card-1</span><span>X</span>
+                </div>
+                <img src="./images/SWSHP_EN_SWSH222.png" style="width:100%; height:auto;">
+              </div>
+
+              <div class="polaroid">
+                <div class="pola-title">
+                  <span>cute-card-2</span><span>X</span>
+                </div>
+                <img src="./images/SWSH12_EN_77.png" style="width:100%; height:auto;">
+              </div>
+
+            </div>
+
+          </div>
+
+          <div class="col-lg-6" style="border-left:2px solid black;">
+            <div class="row no-gutters t">
+              <div style="background:red; color:white; padding:0px .5rem;">04.</div>
+              <div style="margin:0px .5rem;">trainer card:</div>
+            </div>
+            
+            <div class="row no-gutters" style="font-size:1rem; padding:.3rem;">
+              <div class="trainercard">
+                
+                <img src="./images/26b2a693-48c5-4fba-90ec-e26230bd23ba.png">
+
+              </div>
+              
+            </div>
+          </div>
+        </div>
+
+        <center style="border:2px solid black; margin:.2rem;">
+
+          <div class="row no-gutters t">
+            <div style="background:red; color:white; padding:0px .5rem;">05.</div>
+            <div style="font-family:'courier new'; margin:0px .5rem;">story time:</div>
+          </div>
+
+          <div class="row no-gutters" style="font-size:1rem; padding:.3rem; text-align:left;">
+            <p>The first Pokémon game I got was SoulSilver on Christmas 2009. I remember unwrapping it with excitement, eager to embark on my journey through the Johto region. As I explored the world of Pokémon, capturing creatures, battling Gym Leaders, and thwarting Team Rocket's nefarious plans, I was completely captivated by the immersive gameplay and vibrant world.</p>
+      
+            <p>Ever since then, I fell in love with Pokémon, spending countless hours training my team for battles, and catching shinies. The memories I made during my adventures in SoulSilver are ones I'll cherish forever.</p>
+            
+            <p>But enough about Pokémon! Now, let's turn our attention to another beloved game franchise that holds a special place in my heart: <a href="./animalcrossing.html">Animal Crossing</a> unless you want to <a href="./web.html">explore?</a> </p>
+          </div>
+
+
+          
+        </center>
+
+
+    </div>
+
+  </div>
+
+
+
+
+
+
+
+
+
+  </div>
+
+  </div>
+
+
+
+
+
+</body>
+
+</html>

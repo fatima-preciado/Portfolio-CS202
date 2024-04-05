@@ -1,29 +1,131 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Your Portfolio</title>
-    <link rel="stylesheet" href="style.css"> <!-- Link to your CSS file -->
+    <link rel="stylesheet" href="./stylesheet.css"> <!-- Link to your CSS file -->
+
+    <style>
+        #wrapper {
+            width: 800px;
+            height: 1200px;
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: start;
+            gap: 10px;
+            position: relative;
+        }
+
+
+        body {
+            background-color: #fceef5;
+            background: #fceef5 url("./Assignment1.html/images/IHpPGWf.png");
+        }
+
+
+        h1 {
+            color: #806d53;
+            position: absolute;
+            top: 35px;
+            left: 70px;
+            font-size: 50px;
+            letter-spacing: 3px;
+            font-weight: normal;
+        }
+
+        .headbar {
+            margin-top: 100px;
+
+            height: 45px;
+            border: 1px rgb(196, 240, 255) outset;
+            border-radius: 25px;
+            background: linear-gradient(90deg, rgb(196, 240, 255) 9%, rgb(251, 255, 254) 100%);
+        }
+
+
+        .main {
+            width: 770px;
+            height: 1000px;
+            border-width: 7px;
+            border-style: solid;
+            border-image: url("./Assignment1.html/images/8xftJ3v.gif") 7 fill round;
+            margin: auto;
+            border-top-right-radius: 25px;
+            padding: 10px
+        }
+
+        
+
+        .container h4{
+            color: #806d53;
+            margin-left: 20px;
+        }
+
+        .container {
+            background-color:rgb(255, 235, 238);
+            width: 60%;
+            margin-left: -10px;
+            border: dashed 1px gainsboro;
+            border-left: none;
+            border-top-right-radius: 15px;
+            border-bottom-right-radius: 15px;
+        }
+
+
+
+
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        li {
+            padding: 3px;
+            line-height: 20px;
+        }
+
+        li img {
+            vertical-align: middle;
+        }
+
+        li a {
+            display: block;
+
+        }
+
+        li a:hover {
+            background-color: #fceef5;
+            text-decoration: none;
+        }
+    </style>
+
 </head>
+
 <body>
-    <header>
-        <h1>Your Name</h1>
-        <p>Course Number: XXXX</p>
-        <p>Term: XXXX</p>
-    </header>
-    <nav>
-        <ul>
-            <li><a href="week1.html">Week 1</a></li>
-            <li><a href="week2.html">Week 2</a></li>
-            <!-- Add more weeks as needed -->
-        </ul>
-    </nav>
-    <main>
-        <!-- Your content goes here -->
-    </main>
-    <footer>
-        <!-- Footer content -->
-    </footer>
+    <div id="wrapper">
+        <h1> Portfolio! </h1>
+        <div class="headbar"></div>
+
+        <div class="main">
+            <div class="container">
+                <h4> Fatima Preciado <br>
+                    CSCI 202 <br>
+                    Spring 2024 </h4>
+            </div>
+
+            <div class="me">
+                <h2>Assignments</h2>
+                <ul>
+                    <li>
+                        <a href="./Assignment1.html/index.html"> Assignment 1 </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
 </body>
 </html>

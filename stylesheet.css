@@ -1,0 +1,56 @@
+
+  
+ 
+  
+ 
+  
+  a {
+    text-decoration: none;
+    color: #ff99cc;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+    color: #3b3849;
+  }
+  
+  p {
+    color: #3b3849;
+    margin: 0px;
+    margin-bottom: 8px;
+    text-align: center;
+  }
+  
+  b {
+    color: #ff99cc;
+  }
+  
+
+  h2 {
+    font-size: 16px;
+    text-transform: lowercase;
+    letter-spacing: 4px;
+    text-align: left;
+    color: #806d53;
+  }
+  
+  /* Scrollbar styles */
+  ::-webkit-scrollbar {
+    width: 10px;
+    height: 12px;
+    background: #fceef5;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: #fceef5;
+    opacity: 0.5;
+    border-radius: 0px;
+    width: 0px;
+    border: 1px solid #fceef5;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: #ffd7f7;
+    border: 1px solid #ff99cc;
+    border-radius: 5px;
+  }
