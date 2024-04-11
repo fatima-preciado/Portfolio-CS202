@@ -1,0 +1,211 @@
+:root {
+  --text: darkslategray;
+  --line: darkseagreen;
+  --accent: cadetblue;
+  --bg: lightgrey;
+  --fill: whitesmoke;
+  --box: #efd355;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  font-size: 2em;
+  margin-bottom: 2rem;
+  color: var(--fill);
+  filter: drop-shadow(1px 1px 0 var(--text)) drop-shadow(-1px 1px 0 var(--text))
+    drop-shadow(0 -1px 0 var(--text)) drop-shadow(1px 0 var(--text));
+}
+
+main .bug-page {
+  float: left;
+  width: 82%;
+  height: 100vh;
+  padding: 2em;
+  overflow-y: scroll;
+  background-image: url("../images/paper.png");
+  background-repeat: repeat-y;
+  background-size: 100% 25px;
+}
+
+#wrapper {
+  text-align: center;
+  width: 70%;
+  max-width: 800px;
+  margin: 0 auto 2rem;
+  height: 100vh;
+}
+
+body {
+  font-family: verdana, sans-serif;
+  background-image: url("../images/Grid-half-BLUE.png");
+  font-size: 0.9rem;
+  color: var(--text);
+}
+
+h2, h6, p, img {
+  margin: 1rem 0;
+}
+
+a {
+  color: var(--accent);
+  padding: 2px;
+}
+
+p a:hover {
+  color: var(--fill);
+  background-color: var(--accent);
+}
+
+.flex-box {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -1em;
+  align-items: flex-start;
+}
+
+.flex-box section {
+  margin: 1em;
+}
+
+.third {
+  flex: 1 1 calc(33% - 2em);
+}
+
+.twothird {
+  flex: 1 1 calc(66% - 2em);
+}
+
+h2 {
+  font-size: 2em;
+  text-align: center;
+  background-color: var(--accent);
+  padding: 5px;
+}
+
+figcaption {
+  text-align: center;
+  margin: -0.5em 1em 1em 1em;
+}
+
+p {
+  font-size: 1rem;
+}
+
+nav {
+  padding: 0 0 0.3rem 0.5rem;
+}
+
+nav a {
+  color: var(--fill);
+  filter: drop-shadow(1px 1px 0 var(--text)) drop-shadow(-1px 1px 0 var(--text))
+    drop-shadow(0 -1px 0 var(--text)) drop-shadow(1px 0 var(--text));
+}
+
+nav a:hover, nav a:focus {
+  color: var(--accent);
+}
+
+.bug-item img {
+  width: 50%;
+  height: auto;
+}
+
+img {
+  max-width: 100%;
+}
+
+h6 {
+  font-size: 1em;
+}
+
+.box {
+  background-color: var(--box);
+  border: 2px dashed var(--line);
+  border-radius: 2px;
+}
+
+.inner {
+  padding-top: 0px;
+  padding: 0.3rem;
+  border: 3px solid white;
+  border-radius: 2px;
+}
+
+section {
+  margin: 2em 0;
+  padding: 1em 2em;
+  background-color: var(--fill);
+  border: 5px solid var(--line);
+}
+
+.stripe {
+  float: left;
+  width: 3%;
+  height: 100vh;
+  background-color: var(--line);
+}
+
+hr {
+  border: none;
+  border-top: 5px solid var(--line);
+}
+
+.container {
+  max-width: 1500px;
+}
+
+.title {
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  padding: 2em;
+}
+
+.ascii-art {
+  margin-right: 20px;
+}
+
+.border {
+  border: 5px solid #efd355;
+  margin: 0;
+}
+
+.bug-row {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px;
+}
+
+.bug-item:hover {
+  transform: rotate(-4deg);
+  scale: 1;
+}
+
+.gifs1 {
+  position: fixed;
+  bottom: 70%;
+  left: 75%;
+}
+
+.gifs2 {
+  position: fixed;
+  bottom: 70%;
+  right: 75%;
+}
+
+.gifs3 {
+  position: fixed;
+  bottom: 0%;
+  left: 75%;
+}
+
+.gifs4 {
+  position: fixed;
+  bottom: 10%;
+  right: 75%;
+}
