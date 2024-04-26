@@ -1,13 +1,94 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
+    <title>Art Gallery</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link href="./img/favicon.ico" rel="icon" type="image/x-icon">
 </head>
+
+<style>
+    body {
+        background-color: #f1f2da;
+        color: #1B1404;
+        font-family: 'Courier New', Courier, monospace;
+        font-size: .9rem;
+        margin: .2rem 0 0 0;
+        text-shadow: 1px 1px 2px rgba(255, 0, 0, 0.4), -1px -1px 2px rgba(0, 100, 255, 0.4), 0px -1px 2px rgba(0, 255, 0, 0.4);
+    }
+
+    header {
+        width: 100%;
+        max-width: 420px;
+        margin: auto;
+        margin-top: 10px;
+        text-align: center;
+    }
+
+    header h1 {
+        margin-bottom: 0px;
+    }
+
+    header p {
+        margin-top: 0px;
+    }
+
+    .nav {
+        margin-top: 40px;
+        text-align: center;
+    }
+
+    .nav a {
+        color: #2b52ad;
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 16px;
+        margin-right: 20px;
+        margin-left: 20px;
+        text-decoration: none;
+    }
+
+    .painting {
+        margin: auto;
+        margin-top: 40px;
+        margin-bottom: 10px;
+        width: 100%;
+        max-width: 420px;
+        text-align: center;
+        font-size: 14px;
+    }
+
+    .painting img {
+        max-width: 100%;
+        height: auto;
+        margin-bottom: 10px;
+    }
+
+    .painting a {
+        display: block;
+        color: #2b52ad;
+        font-family: 'Courier New', Courier, monospace;
+        text-decoration: none;
+    }
+</style>
+
 <body>
-    <a href="./static/index.html"> STATIC</a>
-    <a href="./responsive/index.html"> RESPONSIVE</a>
-    <a href="./animated_loop/index.html"> ANIMATED</a>
+    <header>
+        <h1>Art Gallery</h1>
+        <p>Several Circles</p>
+    </header>
+
+    <div class="nav">
+        <a href="./static/index.html">static!</a>
+        <a href="./animated_loop/">animated!</a>
+        <a href="./responsive/index.html">responsive!</a>
+    </div>
+
+    <div class="painting">
+        <img src="./static/images/1178px-Vassily_Kandinsky,_1926_-_Several_Circles,_Gugg_0910_25.jpg" alt="">
+        <a href="https://commons.wikimedia.org/wiki/File:Vassily_Kandinsky,_1926_-_Several_Circles,_Gugg_0910_25.jpg">Vassily
+            Kandinsky, 1926 - Several Circles</a>
+    </div>
 </body>
+
 </html>
