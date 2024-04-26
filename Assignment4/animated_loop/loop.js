@@ -13,6 +13,8 @@ function setup() {
 function draw() {
     background(34, 34, 44);
 
+    pulsationAmplitude = sin(frameCount * pulsationSpeed) * 10;
+
     drawPulsatingBlurredCircle([246, 228, 82], 117, 395.4, 35, pulsationAmplitude);
     drawPulsatingBlurredCircle([213, 42, 75], 140, 402, 35, pulsationAmplitude);
     drawPulsatingBlurredCircle([160, 98, 68], 163, 402, 35, pulsationAmplitude);
@@ -177,7 +179,7 @@ function draw() {
     drawCircle([26, 27, 34], 74.4, 509, 10)
 
 
-    pulsationAmplitude = sin(frameCount * pulsationSpeed) * 10;
+    
 }
 
 function drawCircle(color, x, y, diameter) {
