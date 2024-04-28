@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FEATS OF STRENGTH</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Custom CSS for image boxes */
+        body {
+            color: white;
+            background-color: black;
+            font-family:Courier New;
+        }
+
+        @keyframes foda {
+            0% {transform: scale(1, 1)}
+            33% {transform: scale(0.99, 1.01)}
+            66% {transform: scale(1.01, 0.99)}
+            100% {transform: scale(1, 1)}
+          }
+
+        .bounce:active {
+            transform:translate(0, 2px);
+          }
+          
+          .bounce:hover {
+            animation-name:foda;
+            animation-duration:0.2s;
+            animation-iteration-count:1;
+          }
+
+        .image-box {
+            position: relative;
+            width: 70%;
+            max-width: 400px;
+            background-color: black;
+            height: auto;
+            margin: 40px auto 10px auto;
+            text-align: center;
+            font-size: 13px;
+            outline: 3px double white;
+        }
+
+
+        .image-box img {
+            width: auto;
+            max-width: 100%;
+            /* Ensure the image doesn't exceed the box width */
+            height: auto;
+            /* Maintain aspect ratio */
+            display: block;
+            /* Center the image horizontally */
+            margin: 0 auto;
+            /* Center the image vertically */
+        }
+
+        .text {
+            margin: auto;
+            text-align: center;
+            font-size: inherit;
+            padding-top: 15px;
+            padding-bottom: 1px;
+        }
+
+        h1 {
+            padding-top: 25px;
+        }
+
+    </style>
+</head>
+
+<body>
+    
+    <div class="container">
+        
+
+
+        <div class="row">
+            <div class="col-md-6 offset-md-3"> <!-- Center the column horizontally -->
+               <div class="text">
+                    <h1>Whispers of Granite</h1>
+                </div>
+
+
+                <div class="image-box">
+                    <a href="./solitude.html"><img src="./images/dithered-image (1).png" alt="Image 1" class="bounce"></a>
+                   
+
+                    <div class="text">
+                        <p>Solitude's Sigh</p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+        <div class="row">
+            <div class="col-md-6 offset-md-3">
+                <div class="image-box">
+                    <div class="text">
+                        <p>Sentinel of Stone</p>
+                    </div>
+                    <a href="#"><img src="./images/dithered-image (2).png" alt="Image 2" class="bounce">
+                    </a>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-6 offset-md-3">
+                <div class="image-box">
+                    <a href="./dreams.html"> <img src="./images/dithered-image (3).png" alt="Image 3" class="bounce"> </a>
+                    
+                    <div class="text">
+                        <p>Dreams in the Dark</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-6 offset-md-3">
+                <div class="image-box">
+                    <a href="./brotherhood.html"> <img src="./images/dithered-image.png" alt="Image 4" class="bounce"></a>
+                   
+
+                    <div class="text">
+                        <p>Brothers of Burden</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>solitude</title>
+</head>
+
+<style>
+    body {
+        color: white;
+        background-color: black;
+        font-family: Courier New;
+        image-rendering: pixelated;
+    }
+
+    @keyframes shift {
+        0% {
+            filter: blur(100px)
+        }
+
+        100% {
+            filter: blur(0px)
+        }
+    }
+
+    .tv-static {
+        pointer-events: none;
+        position: fixed;
+        height: 120vh;
+        width: 120vw;
+        background: url('./images/giphy.gif');
+        background-size: 1px 3px;
+        opacity: 0.3;
+        mix-blend-mode: darken;
+        bottom: 25%;
+        top: 50%;
+        margin-top: -60vh;
+        right: 25%;
+        left: 50%;
+        margin-left: -60vw;
+        z-index: 2;
+    }
+
+    .orb {
+        display: table;
+        position: fixed;
+        width: 200px;
+        height: 200px;
+        background: radial-gradient(closest-side, white, black);
+        text-align: center;
+        font-size: 11px;
+        letter-spacing: 2px;
+        text-shadow: 0 0 1px black, 0 0 1px black, 0 0 1px black, 0 0 1px black, 0 0 1px black, 0 0 1px black, 0 0 1px black, 0 0 1px black, 0 0 1px black, 0 0 1px black, 0 0 1px black, 0 0 1px black, 0 0 1px black, 0 0 1px black, 0 0 1px black;
+        bottom: 25%;
+        top: 50%;
+        margin-top: -150px;
+        right: 25%;
+        left: 50%;
+        margin-left: -150px;
+        padding: 50px;
+        animation-timing-function: cubic-bezier(.5, 1.49, .3, .77);
+        animation-name: shift;
+        animation-duration: 2.66s;
+        animation-iteration-count: 1;
+    }
+
+    a:link {
+        color: white;
+        text-decoration: none;
+    }
+
+    a:visited {
+        color: white;
+    }
+
+    a:hover {
+        color: white;
+        text-decoration: underline;
+    }
+
+    a:active {
+        color: white;
+    }
+</style>
+
+<body>
+    <div class="tv-static"></div>
+
+    <div class="orb">
+        <div style="display: table-cell; vertical-align: middle;">
+            <div style="opacity:0.893;"><a href="#">Alone I sit, with my boulder near,</a></div>
+        </div>
+    </div>
+
+
+    <script>
+        let currentLine = 0; // This will keep track of the current line of the poem
+
+        async function f() {
+            return await fetch('./poem.txt') // Assuming the poem lines are in 'poem.txt'
+                .then(res => res.text())
+                .then(poem => {
+                    const lines = poem.split(/\r|\n/); // This will split the poem into lines
+                    const link = document.querySelectorAll('a')[0];
+                    link.addEventListener('click', (e) => {
+                        // This will prevent the link from redirecting
+                        if (currentLine < lines.length) {
+                            e.preventDefault();
+                            link.textContent = lines[currentLine]; // This will change the link text to the current line of the poem
+                            currentLine++; // This will move to the next line of the poem
+                        } else {
+                            link.textContent = "Fin."; // This will display a message when the end of the poem is reached
+                            link.href = "./index.html"
+                        }
+                    })
+                })
+        }
+
+        f();
+    </script>
+
+</body>
+
+</html>
