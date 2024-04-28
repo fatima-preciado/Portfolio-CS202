@@ -1,72 +1,75 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>brother hood</title>
+    <title>brotherhood</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
-
-    <style>
-        body {
-            color: white;
-            background-color: black;
-            font-family: Courier New;
-            image-rendering: pixelated;
-        }
-
-        .water {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 60vh;
-            /* Adjust height as needed */
-            background: url('./images/wtrshine.gif');
-            background-size: cover;
-            animation: extendWater 5s forwards;
-            /* Extend water animation */
-        }
-
-        @keyframes extendWater {
-            0% {
-                height: 0;
-            }
-
-            100% {
-                height: 60vh;
-                /* Adjust final height */
-            }
-        }
-
-        .poems {
-            position: relative;
-            color: white;
-            margin-top: 60vh;
-            /* Adjust based on water height */
-            padding: 0;
-            text-align: center;
-        }
-
-        p {
-            text-shadow: 0 0 3px #262A6D, 0 0 3px #262A6D, 0 0 3px #262A6D, 0 0 3px #262A6D, 0 0 3px #262A6D, 0 0 3px #262A6D, 0 0 3px #262A6D, 0 0 3px #262A6D, 0 0 3px #262A6D, 0 0 3px #262A6D, 0 0 3px #262A6D, 0 0 3px #262A6D, 0 0 3px #262A6D, 0 0 3px #262A6D, 0 0 3px #262A6D, 0 0 3px #262A6D;
-            font-size: 11px;
-            text-align: justify;
-            text-align-last: center;
-        }
-    </style>
 </head>
 
-<body>
-    <div class="water"></div>
-    <div class="poems">
-        <p>Two of us, bound by fate, we share this load,</p>
-        <p style="padding: 496px 20px 0 20px;">Together we stand, on this winding road.</p>
-        <p style="padding: 496px 20px 0 20px;">Linked by strength, our spirits entwine,</p>
-        <p style="padding: 496px 20px 0 20px;">In unity, our powers combine.</p>
-        <a href="./index.html"> <img style="padding: 6px 0 0 0;" src="./images/dithered-image.png"></a>
-    </div>
+<style>
+    body {
+        color: white;
+        background-color: black;
+        font-family: Courier New;
+        image-rendering: pixelated;
+    }
 
+    @keyframes extendWater {
+        0% {
+            height: 0;
+        }
+
+        100% {
+            height: 80vh;
+        }
+    }
+
+    .poems {
+        color: white;
+        text-align: center;
+        position: relative;
+        z-index: 1;
+    }
+
+    .break {
+        padding-top: 750px;
+        padding-bottom: 750px;
+    }
+
+    .poems p {
+        text-shadow: 0 0 3px #262A6D, 0 0 3px #262A6D, 0 0 3px #262A6D, 0 0 3px #262A6D, 0 0 3px #262A6D, 0 0 3px #262A6D, 0 0 3px #262A6D, 0 0 3px #262A6D, 0 0 3px #262A6D, 0 0 3px #262A6D, 0 0 3px #262A6D, 0 0 3px #262A6D, 0 0 3px #262A6D, 0 0 3px #262A6D, 0 0 3px #262A6D, 0 0 3px #262A6D;
+        font-size: 11px;
+        text-align: justify;
+        text-align-last: center;
+        padding-top: 496px;
+    }
+
+    .poems img {
+        padding-top: 0.5rem;
+        width: 40%;
+        height: auto;
+    }
+</style>
+
+<body>
+    <div class="container  d-flex justify-content-center align-items-center">
+        <div class="water d-flex justify-content-center align-items-cente">
+            <img src="./images/wtrshine.gif" alt=""
+                style="animation: extendWater 5s forwards; position: fixed; height: 90vh; width: 80vh;">
+            <div class="container d-flex justify-content-center align-items-center" style="height: 100vh;">
+                <div class="poems">
+                    <div class="break"></div>
+                    <p>Two of us, bound by fate, we share this load,</p>
+                    <p>Together we stand, on this winding road.</p>
+                    <p>Linked by strength, our spirits entwine,</p>
+                    <p>In unity, our powers combine.</p>
+                    <a href="./index.html"><img src="./images/dithered-image (6).png" class="img-fluid"></a>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>
