@@ -27,7 +27,7 @@ var y;
 
 function setup() {
     createCanvas(windowWidth, windowHeight);
-    loadJSON("http://api.open-notify.org/astros.json", gotAstronautsData);
+    loadJSON("https://raw.githubusercontent.com/unnamedActant/Example_JSON/main/astros.json", gotAstronautsData);
 
     sunn = loadImage("./images/sun.png");
     mer = loadImage("./images/mercury.png");
