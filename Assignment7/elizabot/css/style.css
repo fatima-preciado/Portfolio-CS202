@@ -245,19 +245,18 @@ header {
   }
 }
 
-a{
+a {
   text-decoration: none;
-  color:var(--pink);
+  color: var(--pink);
   text-shadow: 2px 2px 1px #34f2ff;
-  transition:0.3s;
+  transition: 0.3s;
   text-transform: uppercase;
 }
 
-a:hover{
-  transition:0.3s;
-  letter-spacing:1.5px;
+a:hover {
+  transition: 0.3s;
+  letter-spacing: 1.5px;
 }
-
 
 textarea {
   width: calc(100% - 20px);
